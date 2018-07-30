@@ -1,0 +1,360 @@
+/*
+ ================== this to make  the  div take full screen space ==========
+ */
+.page-header {
+    background-color: #B2AFAB;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-header .filter::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.page-header.page-header-small {
+    min-height: 65vh !important;
+    max-height: 700px;
+}
+.page-header.page-header-xs {
+    min-height: 40vh !important;
+}
+.page-header.section-dark .content-center,
+.page-header.section-dark .category-absolute {
+    z-index: 1;
+}
+
+.page-header .motto {
+    text-align: left;
+    z-index: 3;
+    color: #fff;
+    position: relative;
+}
+/*
+============== this for  changing the navbar into transparent state ===
+ */
+.navbar-transparent {
+    background-color: transparent !important;
+    border-bottom: 1px solid transparent;
+}
+
+/*
+========= contact  us
+ */
+
+.contact-us-white{
+    color:#ffffff;
+
+}
+
+.contact-us-red{
+    color:#951b0c;
+
+}
+
+/*
+ ========= font  size of  the navbar links
+  */
+.nav-font{
+    font-size: larger;
+}
+
+/*
+hide the  scroll bar
+ */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+/*
+navbar font color
+ */
+.navbar-dark .navbar-nav .nav-link
+{color:white}
+
+.black-color
+{color:black}
+
+
+/*
+shop nnow button
+ */
+.shop-now{
+    width: 50%;
+    background-color:#951b0c;
+    color: white;
+    border-color:#951b0c ;
+    border-radius: 15px;
+    height: 37px;
+    margin-top: 5%;
+
+}
+
+
+/*
+fixed background
+ */
+
+.fixed{
+    background-attachment: fixed;
+    position: page
+}
+
+.desc{
+    background-color: white;
+    opacity: 0.8;
+
+}
+
+
+.full{
+    width: 100%;height: 100%;
+}
+
+
+/*
+============= User header =================
+ */
+/* change the background color */
+.navbar-custom {
+    background-color: #513e6e;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+
+}
+
+/*
+============ font in the product page ============
+ */
+
+.product-font{
+    font-family: 'Old Standard TT', serif;
+}
+
+
+a.white:hover , a.white:active {
+color: white;
+text-decoration:none; }
+
+a.white{
+     color: rgba(255,255,255,.5);
+}
+
+a.white:visited{
+    background-color: white;
+}
+
+
+
+/*
+=============== shopping navbar ================
+ */
+.shopping-nav{
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(117,116,117,1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(117,116,117,1);
+    box-shadow: 0px 2px 5px 0px rgba(117,116,117,1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.shopping-font{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #333333;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+}
+
+a.shopping-font:hover{
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #e65540;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+}
+
+/*
+================= crusel font style ===============
+ */
+.cru{
+    font-family: 'Poppins', Bold;
+    font-size: 90px;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.cru-comment{
+    font-family: 'Poppins', Bold;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 3px;
+
+}
+.carousel-caption{
+    top:44%;
+
+}
+
+.button1 {
+
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-radius:15px ;
+    margin-top: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+/*
+===================== change color =======================
+ */
+.site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+
+/*
+============================
+ */
+
+.blockimg{
+    position: relative;
+    width:100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    justify-content:center;
+}
+
+
+
+.button2 {
+
+    text-decoration: none;
+    background-color:white;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    margin-top: 10px;
+    font-family:'Montserrat', sans-serif;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(222,215,222,1);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(222,215,222,1);
+    box-shadow: 3px 4px 5px 0px rgba(222,215,222,1);
+}
+
+.btn-div{
+    margin-top: -50px;
+    margin-left: 100px;
+    position: sticky;
+    bottom:20px;
+}
+
+a.button2:hover{
+    background-color:#e65540;
+    color: white;
+    border-top: 1px solid #e65540;
+    border-right: 1px solid #e65540;
+    border-bottom: 1px solid #e65540;
+    border-left: 1px solid #e65540;
+    text-decoration: none;
+}
+
+.img-zoom:hover{
+    transform: scale(1.2);
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+
+}
+/*
+====================== featured product title ====================
+ */
+.fetured{
+    font-family: 'Montserrat', sans-serif,Bold;
+    font-size: 30px;
+    color: #222222;
+    line-height: 1.2;
+    text-transform: uppercase;
+ font-weight:bolder;
+    }
+
+
+
+
+
